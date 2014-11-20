@@ -20,7 +20,7 @@ public:
 		setThresh(50,50,50);
 		setMinContourArea(100);
 		tealColor = cv::Scalar(255,255,0);
-		contourCoordinates = cv::Point(999,999);
+		contourCoordinates = cv::Point(NULL, NULL);
 	}
 	void setMinContourArea(int area) {
 		minContourArea = area;
