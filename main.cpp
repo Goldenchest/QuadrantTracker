@@ -148,7 +148,7 @@ void highlightAllQuadrants() {
 void drawQuadrants(cv::Point targetCoord) {
 	cv::line(image, cv::Point(0, centerPoint.y), cv::Point(frameWidth, centerPoint.y), blackColor);
 	cv::line(image, cv::Point(centerPoint.x, 0), cv::Point(centerPoint.x, frameHeight), blackColor);
-	if (targetCoord != cv::Point(999,999)) {
+	if (targetCoord != cv::Point(NULL, NULL)) {
 		if (centerRectangle.contains(targetCoord)) {
 			targetCentered = true;
 			targetInQ1 = targetInQ2 = targetInQ3 = targetInQ4 = false;
